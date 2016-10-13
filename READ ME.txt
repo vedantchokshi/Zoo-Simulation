@@ -1,0 +1,55 @@
+Getting started:
+To start simulatoion there needs to be a config file which will define elements to create in the Zoo. The file format should be (exclude lines between ** from the program)
+
+*This needs to be the first line or the Zoo won't run*
+
+	zoo:
+
+*After creating the Zoo you have the ability to create Enclosures or add Food to the Zoo Foodstore. No Zookeepers or Animals can be added yet*
+
+*Format for adding food*
+
+	food name:quantity
+
+*Format for adding Enclosures*
+
+	enclosure:waste inside enclosure
+
+*Any food name:quantity lines added after creating an enclosure will be added to the last Enclosure*
+*Once an Enclosure is created, you can add Zookeepers and Animals to the Enclosure*
+
+*Format for adding Animals*
+	
+	animal type:name,gender,age,health,enclosure index
+
+*Use ':' after animal type and ',' after separating for name,gender,age,health,enclosure index
+*If an enclosure index is not specified then Animal will be added to the last Enclosure made*
+
+*Format for adding Zookeepers*
+	
+	zookeeper type:
+
+*By deault Zookeepers are assigned to the last Enclosure made so put your Zookeeper after the Enclosure*
+
+*********************************************************************************************************************************************
+Types of food names you can use: hay, steak, celery, ice cream, fruit, fish
+Types of animals you can add to the zoo: Bear, Chimpanzee, Elephant, Gorilla, Giraffe, Lion, Penguin, Tiger
+Types of zookeepers you can add to the zoo: zookeeper, playzookeeper, physiozookeeper
+*********************************************************************************************************************************************
+*PLEASE MAKE SURE THE ANIMALS AND FOOD NAMES ARE YOU ADD FROM FROM THE TYPES PROVIDED ABOVE OR PROGRAM WONT RUN*
+*********************************************************************************************************************************************
+Example:
+
+Zoo:
+enclosure:5
+steak:5
+TIGER:Tom,m,5,3,1
+TIGER:Tam,f,5,5,1
+zookeeper:
+enclosure:40
+fruit:20
+giraffe:Jim,m,6,6,2
+physiozookeeper:
+*********************************************************************************************************************************************
+
+Simulation can be started by compiling all java files and running the Zoo.java file followed by the config file as the first argument.

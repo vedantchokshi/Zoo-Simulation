@@ -1,0 +1,10 @@
+Zoo:
+enclosure:5
+steak:5
+tiger:Tom,k,5,3,1
+TIGER:Tam,f,5,5,1
+zookeeper:
+enclosure:40
+fruit:20
+giraffe:Jim,m,6,6,2
+physiozookeeper:
